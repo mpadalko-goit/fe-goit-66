@@ -13,7 +13,7 @@ body {
   background-color: #c4c0c0;
 }
 
-/* Main section pre title */
+/* Section pre title */
 .pre-title {
   font-weight: 600;
   font-size: 11px;
@@ -22,7 +22,7 @@ body {
   color: var(--primary-text-color);
 }
 
-/* Main section title */
+/*Section title */
 .title {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -40,6 +40,11 @@ body {
 /* Link styles */
 .link {
   text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
 }
 
 /* Button styles */
@@ -73,11 +78,6 @@ body {
   line-height: 1.3;
   letter-spacing: 0.1em;
   font-size: 12px;
-}
-
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
 }
 
 .header-contact {
