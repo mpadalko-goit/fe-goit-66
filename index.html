@@ -10,99 +10,113 @@
       rel="stylesheet"
     />
     <title>Barbershop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="header">
-      <a href="" class="header-logo"
-        ><img src="./img/logo.svg" alt="barbershop logo"
-      /></a>
-      <nav class="header-nav">
-        <ul class="header-list list">
-          <li class="header-item">
-            <a href="test.html" class="header-link link">Gallery</a>
-          </li>
-          <li class="header-item">
-            <a href="" class="header-link link">Services and prices</a>
-          </li>
-          <li class="header-item">
-            <a href="" class="header-link link">Barbers</a>
-          </li>
-          <li class="header-item">
-            <a href="" class="header-link link">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <a href="tel:+380441111111" class="header-contact link"
-        >+38 044 111 11 11</a
-      >
-      <button type="button" class="header-btn btn">Online-booking</button>
+      <div class="container header-container">
+        <a href="" class="header-logo"
+          ><img src="./img/logo.svg" alt="barbershop logo"
+        /></a>
+        <nav class="header-nav">
+          <ul class="header-list list">
+            <li class="header-item">
+              <a href="test.html" class="header-link link">Gallery</a>
+            </li>
+            <li class="header-item">
+              <a href="" class="header-link link">Services and prices</a>
+            </li>
+            <li class="header-item">
+              <a href="" class="header-link link">Barbers</a>
+            </li>
+            <li class="header-item">
+              <a href="" class="header-link link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="contacts-wrap">
+          <a href="tel:+380441111111" class="header-contact link"
+            >+38 044 111 11 11</a
+          >
+          <button type="button" class="header-btn btn">Online-booking</button>
+        </div>
+      </div>
     </header>
     <main class="main">
       <!-- Hero section -->
       <section class="hero">
-        <ul class="hero-social list">
-          <li class="social-item">
-            <a
-              href=""
-              rel="noopener noreferrer nofollow"
-              target="_blank"
-              class="social-item-link link"
-              >Youtube</a
-            >
-          </li>
-          <li class="social-item">
-            <a
-              href=""
-              rel="noopener noreferrer nofollow"
-              target="_blank"
-              class="social-item-link link"
-              >Instagram</a
-            >
-          </li>
-        </ul>
-        <p class="hero-pre-title">A hair salon for men in Kyiv</p>
-        <h1 class="hero-title">BarberShop</h1>
-        <p class="hero-description">
-          We are experts in trendy men’s haircuts.We work quickly, carefully and
-          with style.
-        </p>
+        <div class="container hero-container">
+          <ul class="hero-social list">
+            <li class="social-item">
+              <a
+                href=""
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="social-item-link link"
+                >Youtube</a
+              >
+            </li>
+            <li class="social-item">
+              <a
+                href=""
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                class="social-item-link link"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+          <div class="hero-wrapper">
+            <p class="hero-pre-title">A hair salon for men in Kyiv</p>
+            <h1 class="hero-title">BarberShop</h1>
+            <p class="hero-description">
+              We are experts in trendy men’s haircuts. We work quickly,
+              carefully and with style.
+            </p>
+          </div>
+        </div>
         <!-- TODO controls back forward -->
       </section>
       <!-- About Section  -->
       <section class="about">
-        <ul class="about-list list">
-          <li class="about-item">
-            <img
-              src="./img/about-img-1.jpeg"
-              alt="haircuts"
-              width="270"
-              height="445"
-            />
-          </li>
-          <li class="about-item">
-            <img
-              src="./img/about-img-2.jpeg"
-              alt="haircuts"
-              width="270"
-              height="445"
-            />
-          </li>
-        </ul>
-        <p class="about-pre-title pre-title">About</p>
-        <h2 class="about-title title">Best Barbershop in your city</h2>
-        <p class="about-description">
-          If you want to add more confidence to your image, you should
-          definitely visit us.
-        </p>
-        <p class="about-text">
-          We are a team that never stops at what has been achieved and are
-          thirsty for changes. And when you fall into the hands of our master,
-          you will never be the same again. We are a team that is always "on the
-          same wave" with clients. Therefore, we are always ready to improve
-          everyone who comes to us!
-        </p>
-        <button type="button" class="about-btn btn">Online-booking</button>
+        <div class="container">
+          <ul class="about-list list">
+            <li class="about-item">
+              <img
+                src="./img/about-img-1.jpeg"
+                alt="haircuts"
+                width="270"
+                height="445"
+              />
+            </li>
+            <li class="about-item">
+              <img
+                src="./img/about-img-2.jpeg"
+                alt="haircuts"
+                width="270"
+                height="445"
+              />
+            </li>
+          </ul>
+          <p class="about-pre-title pre-title">About</p>
+          <h2 class="about-title title">Best Barbershop in your city</h2>
+          <p class="about-description">
+            If you want to add more confidence to your image, you should
+            definitely visit us.
+          </p>
+          <p class="about-text">
+            We are a team that never stops at what has been achieved and are
+            thirsty for changes. And when you fall into the hands of our master,
+            you will never be the same again. We are a team that is always "on
+            the same wave" with clients. Therefore, we are always ready to
+            improve everyone who comes to us!
+          </p>
+          <button type="button" class="about-btn btn">Online-booking</button>
+        </div>
       </section>
       <!-- Services and prices Section  -->
       <section class="prices">
@@ -177,42 +191,44 @@
       </section>
       <!-- Our barbers -->
       <section class="barbers">
-        <p class="barbers-pre-title pre-title">
-          for true enjoyers of the atmosphere
-        </p>
-        <h2 class="barbers-title title">Our barbers</h2>
-        <ul class="barbers-list list">
-          <li class="barbers-item">
-            <img
-              src="./img/our-barbers/barber-1.jpeg"
-              alt="John Smith photo"
-              width="370"
-              height="346"
-            />
-            <h3 class="barbers-item-title">John Smith</h3>
-            <p class="barbers-item-text">Extreme Barber</p>
-          </li>
-          <li class="barbers-item">
-            <img
-              src="./img/our-barbers/barber-2.jpeg"
-              alt="Michele Doe photo"
-              width="370"
-              height="346"
-            />
-            <h3 class="barbers-item-title">Michele Doe</h3>
-            <p class="barbers-item-text">Extreme Barber</p>
-          </li>
-          <li class="barbers-item">
-            <img
-              src="./img/our-barbers/barber-3.jpeg"
-              alt="Alan Black photo"
-              width="370"
-              height="346"
-            />
-            <h3 class="barbers-item-title">Alan Black</h3>
-            <p class="barbers-item-text">Extreme Barber</p>
-          </li>
-        </ul>
+        <div class="container">
+          <p class="barbers-pre-title pre-title">
+            for true enjoyers of the atmosphere
+          </p>
+          <h2 class="barbers-title title">Our barbers</h2>
+          <ul class="barbers-list list">
+            <li class="barbers-item">
+              <img
+                src="./img/our-barbers/barber-1.jpeg"
+                alt="John Smith photo"
+                width="370"
+                height="346"
+              />
+              <h3 class="barbers-item-title">John Smith</h3>
+              <p class="barbers-item-text">Extreme Barber</p>
+            </li>
+            <li class="barbers-item">
+              <img
+                src="./img/our-barbers/barber-2.jpeg"
+                alt="Michele Doe photo"
+                width="370"
+                height="346"
+              />
+              <h3 class="barbers-item-title">Michele Doe</h3>
+              <p class="barbers-item-text">Extreme Barber</p>
+            </li>
+            <li class="barbers-item">
+              <img
+                src="./img/our-barbers/barber-3.jpeg"
+                alt="Alan Black photo"
+                width="370"
+                height="346"
+              />
+              <h3 class="barbers-item-title">Alan Black</h3>
+              <p class="barbers-item-text">Extreme Barber</p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Gallery Section-->
       <section class="gallery">
