@@ -192,12 +192,31 @@ body {
   padding: 120px 0;
 }
 
+.about-wrapper {
+  display: flex;
+}
+
+.about-list {
+  display: flex;
+}
+
+.about-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.desc-wrapper {
+  padding-left: 30px;
+  padding-right: 100px;
+}
+
 .about-pre-title {
   color: var(--primary-text-color);
+  margin-bottom: 20px;
 }
 
 .about-title {
   color: var(--primary-text-color);
+  margin-bottom: 20px;
 }
 
 .about-description {
@@ -205,6 +224,7 @@ body {
   line-height: 1.7;
   letter-spacing: 0.02em;
   color: var(--tetriary-text-color);
+  margin-bottom: 20px;
 }
 
 .about-text {
@@ -212,6 +232,7 @@ body {
   line-height: 1.9;
   letter-spacing: 0.02em;
   color: var(--tetriary-text-color);
+  ≈
 }
 
 .about-btn {
@@ -219,13 +240,43 @@ body {
 }
 
 /* Prices section */
+.prices {
+  background-color: #111319;
+  padding: 120px 0;
+}
 
 .prices-pre-title {
+  margin-bottom: 20px;
   color: var(--primary-title-color);
 }
 
 .prices-title {
+    margin-bottom: 44px;
   color: var(--secondary-text-color);
+}
+
+.list-wrapper {
+    display: flex;
+    margin-bottom: 44px;
+}
+
+.prices-list {
+    width: calc((100%-30px) / 2);
+    padding: 30px 20px;
+    outline: 1px solid white;
+}
+
+.prices-list:first-child {
+    margin-right: 30px;
+}
+
+.prices-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prices-item:not(:last-child) {
+    margin-bottom: 30px;
 }
 
 .prices-item-text {
@@ -240,6 +291,36 @@ body {
 }
 
 /* Benefits section */
+.benefits {
+    padding: 120px 0;
+}
+
+.benefits-wrapper {
+    display: flex;
+}
+
+.benefits-list {
+    width: 50%;
+    padding: 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.benefits-item {
+    width: 170px;
+    height: 133px;
+    padding: 20px 24px;
+    outline: 1px solid black;
+}
+
+.benefits-item:nth-child(2n+1) {
+    margin-right: 30px;
+}
+
+.benefits-item:not(:first-child) {
+    margin-top: 30px;
+}
+
 .benefits-item span {
   font-weight: 700;
   font-size: 42px;
@@ -260,6 +341,11 @@ body {
   font-size: 11px;
   line-height: 1.4;
   color: var(--primary-text-color);
+}
+
+.benefits .desc-wrapper {
+    padding-right: 70px;
+    width: 50%;
 }
 
 .benefits-pre-title {
