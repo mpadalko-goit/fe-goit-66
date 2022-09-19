@@ -41,7 +41,17 @@ body {
   font-size: 11px;
   line-height: 1.4;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
   color: var(--primary-text-color);
+}
+
+.pre-title::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background: currentColor;
 }
 
 /*Section title */
@@ -161,7 +171,11 @@ body {
 
 .hero-wrapper {
   padding: 272px 0 208px 100px;
-  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("../img/hero/slider-img-1.jpeg");
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url("../img/hero/slider-img-1.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   flex-grow: 1;
@@ -186,6 +200,7 @@ body {
   line-height: 1.7;
   letter-spacing: 0.02em;
   max-width: 357px;
+  color: var(--description-text);
 }
 
 /* About section */
@@ -233,7 +248,7 @@ body {
   line-height: 1.9;
   letter-spacing: 0.02em;
   color: var(--tetriary-text-color);
-  ≈
+  margin-bottom: 42px;
 }
 
 .about-btn {
@@ -242,13 +257,13 @@ body {
 
 /* Prices section */
 .prices {
-    max-width: 1920px;
-    margin: 0 auto;
-  background-image: url("../img/prices-img.png"), linear-gradient( #111319, #111319);
+  max-width: 1920px;
+  margin: 0 auto;
+  background-image: url("../img/prices-img.png"),
+    linear-gradient(#111319, #111319);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 120px 0;
-
 }
 
 .prices-pre-title {
@@ -257,32 +272,45 @@ body {
 }
 
 .prices-title {
-    margin-bottom: 44px;
+  margin-bottom: 44px;
   color: var(--secondary-text-color);
 }
 
 .list-wrapper {
-    display: flex;
-    margin-bottom: 44px;
+  display: flex;
+  margin-bottom: 44px;
 }
 
 .prices-list {
-    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
-    width: calc((100%-30px) / 2);
-    padding: 30px 20px;
+  width: calc((100%-30px) / 2);
+  padding: 30px 20px;
 }
 
 .prices-list:first-child {
-    margin-right: 30px;
+  margin-right: 30px;
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.prices-list:last-child {
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
 .prices-item {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.prices-item::after {
+  content: "";
+  height: 1px;
+  flex-grow: 1;
+  margin: 0 12px;
+  background: rgba(157, 164, 189, 0.12);
 }
 
 .prices-item:not(:last-child) {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .prices-item-text {
@@ -292,39 +320,43 @@ body {
   color: var(--description-text);
 }
 
+.prices-item-text:last-child {
+  order: 1;
+}
+
 .prices-btn {
   color: var(--secondary-text-color);
 }
 
 /* Benefits section */
 .benefits {
-    padding: 120px 0;
+  padding: 120px 0;
 }
 
 .benefits-wrapper {
-    display: flex;
+  display: flex;
 }
 
 .benefits-list {
-    width: 50%;
-    padding: 0 100px;
-    display: flex;
-    flex-wrap: wrap;
+  width: 50%;
+  padding: 0 100px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .benefits-item {
-    width: 170px;
-    height: 133px;
-    padding: 20px 24px;
-    outline: 1px solid black;
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
+  outline: 1px solid black;
 }
 
 .benefits-item:nth-child(even) {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .benefits-item:nth-child(odd) {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 
 .benefits-item span {
@@ -350,8 +382,8 @@ body {
 }
 
 .benefits .desc-wrapper {
-    padding-right: 70px;
-    width: 50%;
+  padding-right: 70px;
+  width: 50%;
 }
 
 .benefits-pre-title {
@@ -408,6 +440,32 @@ body {
   line-height: 1.4;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+
+.barbers-item-social {
+  display: flex;
+}
+
+.social-item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link:hover {
+  background: grey;
+}
+
+.social-link:hover svg {
+  fill: var(--accent-color);
 }
 
 /* Booking form section */
