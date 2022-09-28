@@ -9,11 +9,13 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
     <title>Barbershop</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -42,7 +44,9 @@
           <a href="tel:+380441111111" class="header-contact link"
             >+38 044 111 11 11</a
           >
-          <button type="button" class="header-btn btn">Online-booking</button>
+          <button type="button" class="header-btn btn" data-modal-open>
+            Online-booking
+          </button>
         </div>
       </div>
     </header>
@@ -72,7 +76,9 @@
           </ul>
           <div class="hero-wrapper">
             <p class="hero-pre-title pre-title">A hair salon for men in Kyiv</p>
-            <h1 class="hero-title">BarberShop</h1>
+            <h1 class="hero-title animate__animated animate__pulse">
+              BarberShop
+            </h1>
             <p class="hero-description">
               We are experts in trendy men’s haircuts. We work quickly,
               carefully and with style.
@@ -212,26 +218,25 @@
           <h2 class="barbers-title title">Our barbers</h2>
           <ul class="barbers-list list">
             <li class="barbers-item">
-              <img
-                src="./img/our-barbers/barber-1.jpeg"
-                alt="John Smith photo"
-                width="370"
-                height="346"
-              />
+              <div class="barbers-wrap-details">
+                <img
+                  src="./img/our-barbers/barber-1.jpeg"
+                  alt="John Smith photo"
+                  width="370"
+                  height="346"
+                />
+                <p class="barber-details">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur quae amet sed aspernatur necessitatibus dolorem
+                  eveniet commodi itaque inventore ratione, dolore dolor
+                  nesciunt pariatur praesentium perspiciatis accusamus, corrupti
+                  ipsa! Ad.
+                </p>
+              </div>
+
               <h3 class="barbers-item-title">John Smith</h3>
               <p class="barbers-item-text">Extreme Barber</p>
               <ul class="barbers-item-social list">
-                <li class="social-item">
-                  <a href="" class="social-link">
-                    <svg
-                      viewBox="0 0 100 100"
-                      width="20"
-                      class="icon shape-codepen"
-                    >
-                      <use xlink:href="./img/sprite.svg#icon-mail"></use>
-                    </svg>
-                  </a>
-                </li>
                 <li class="social-item">
                   <a href="" class="social-link">
                     <svg
@@ -283,6 +288,48 @@
               />
               <h3 class="barbers-item-title">Michele Doe</h3>
               <p class="barbers-item-text">Extreme Barber</p>
+              <ul class="barbers-item-social list">
+                <li class="social-item">
+                  <a href="" class="social-link">
+                    <svg
+                      viewBox="0 0 100 100"
+                      width="20"
+                      class="icon shape-codepen"
+                    >
+                      <use xlink:href="./img/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="" class="social-link">
+                    <svg
+                      viewBox="0 0 100 100"
+                      width="20"
+                      class="icon shape-codepen"
+                    >
+                      <use xlink:href="./img/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="" class="social-link">
+                    <svg viewBox="0 0 100 100" width="20">
+                      <use xlink:href="./img/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="" class="social-link">
+                    <svg
+                      viewBox="0 0 100 100"
+                      width="20"
+                      class="icon shape-codepen"
+                    >
+                      <use xlink:href="./img/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="barbers-item">
               <img
@@ -293,50 +340,94 @@
               />
               <h3 class="barbers-item-title">Alan Black</h3>
               <p class="barbers-item-text">Extreme Barber</p>
+              <ul class="barbers-item-social list">
+                <li class="social-item">
+                  <a href="" class="social-link">
+                    <svg
+                      viewBox="0 0 100 100"
+                      width="20"
+                      class="icon shape-codepen"
+                    >
+                      <use xlink:href="./img/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="" class="social-link">
+                    <svg
+                      viewBox="0 0 100 100"
+                      width="20"
+                      class="icon shape-codepen"
+                    >
+                      <use xlink:href="./img/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="" class="social-link">
+                    <svg viewBox="0 0 100 100" width="20">
+                      <use xlink:href="./img/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="" class="social-link">
+                    <svg
+                      viewBox="0 0 100 100"
+                      width="20"
+                      class="icon shape-codepen"
+                    >
+                      <use xlink:href="./img/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
       </section>
       <!-- Gallery Section-->
       <section class="gallery">
-        <p class="gallery-pre-title pre-title">
-          in Latin, "barba" means "beard"
-        </p>
-        <h2 class="visually-hidden">Gallery</h2>
-        <ul class="gallery-list list">
-          <li class="gallery-item">
-            <img
-              src="./img/portfolio/portfolio-img-1.jpg"
-              alt="gallery-img"
-              width="270"
-              height="360"
-            />
-          </li>
-          <li class="gallery-item">
-            <img
-              src="./img/portfolio/portfolio-img-2.jpg"
-              alt="gallery-img"
-              width="270"
-              height="360"
-            />
-          </li>
-          <li class="gallery-item">
-            <img
-              src="./img/portfolio/portfolio-img-3.jpg"
-              alt="gallery-img"
-              width="270"
-              height="360"
-            />
-          </li>
-          <li class="gallery-item">
-            <img
-              src="./img/portfolio/portfolio-img-4.jpg"
-              alt="gallery-img"
-              width="270"
-              height="360"
-            />
-          </li>
-        </ul>
+        <div class="container">
+          <p class="gallery-pre-title pre-title">
+            in Latin, "barba" means "beard"
+          </p>
+          <h2 class="visually-hidden">Gallery</h2>
+          <ul class="gallery-list list">
+            <li class="gallery-item">
+              <img
+                src="./img/portfolio/portfolio-img-1.jpg"
+                alt="gallery-img"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="./img/portfolio/portfolio-img-2.jpg"
+                alt="gallery-img"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="./img/portfolio/portfolio-img-3.jpg"
+                alt="gallery-img"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="./img/portfolio/portfolio-img-4.jpg"
+                alt="gallery-img"
+                width="270"
+                height="360"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Online-booking Section -->
       <section class="booking">
@@ -396,5 +487,11 @@
         </li>
       </ul>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>X</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
