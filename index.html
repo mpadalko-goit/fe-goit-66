@@ -54,26 +54,29 @@
       <!-- Hero section -->
       <section class="hero">
         <div class="container hero-container">
-          <ul class="hero-social list">
-            <li class="social-item">
-              <a
-                href=""
-                rel="noopener noreferrer nofollow"
-                target="_blank"
-                class="social-item-link link"
-                >Youtube</a
-              >
-            </li>
-            <li class="social-item">
-              <a
-                href=""
-                rel="noopener noreferrer nofollow"
-                target="_blank"
-                class="social-item-link link"
-                >Instagram</a
-              >
-            </li>
-          </ul>
+          <div class="hero-social-wrap">
+            <ul class="hero-social list">
+              <li class="social-item">
+                <a
+                  href=""
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                  class="social-item-link link"
+                  >Youtube</a
+                >
+              </li>
+              <li class="social-item">
+                <a
+                  href=""
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                  class="social-item-link link"
+                  >Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+
           <div class="hero-wrapper">
             <p class="hero-pre-title pre-title">A hair salon for men in Kyiv</p>
             <h1 class="hero-title animate__animated animate__pulse">
@@ -429,40 +432,65 @@
           </ul>
         </div>
       </section>
-      <!-- Online-booking Section -->
-      <section class="booking">
-        <h2 class="booking-title title">Online-booking</h2>
-        <!-- TODO form -->
-      </section>
-      <!-- Contact section -->
-      <section class="contacts">
-        <h2 class="contacts-title title">Contacts</h2>
-        <address class="contacts-address">
-          <ul class="contacts-list list">
-            <li>
-              <a
-                href="https://goo.gl/maps/HtskVrAPcDGHSepL8"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="contacts-item link"
-                >st. Vasilkivska, 7A Kiev, 08132</a
-              >
-            </li>
-            <li>
-              <a href="tel:+380441111111" class="contacts-item link"
-                >+38 044 111 11 11</a
-              >
-            </li>
-            <li>
-              <a href="mailto:barbershop@email.com" class="contacts-item link"
-                >barbershop@email.com</a
-              >
-            </li>
-          </ul>
-        </address>
-        <p class="contacts-pre-title pre-title">working hours</p>
-        <p class="contacts-time">Every day from 9:00 to 22:00</p>
-      </section>
+
+      <div class="wrap-bottom">
+        <div class="container booking-container">
+          <!-- Online-booking Section -->
+          <section class="booking">
+            <h2 class="booking-title title">Online-booking</h2>
+            <form action="" class="online-form">
+              <input
+                type="text"
+                name="name"
+                placeholder="Name*"
+                class="form-item"
+              />
+              <input
+                type="tel"
+                name="tel"
+                placeholder="Phone*"
+                class="form-item"
+              />
+              <textarea
+                name="message"
+                placeholder="Message"
+                class="form-item"
+              ></textarea>
+            </form>
+          </section>
+          <!-- Contact section -->
+          <section class="contacts">
+            <h2 class="contacts-title title">Contacts</h2>
+            <address class="contacts-address">
+              <ul class="contacts-list list">
+                <li>
+                  <a
+                    href="https://goo.gl/maps/HtskVrAPcDGHSepL8"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="contacts-item link"
+                    >st. Vasilkivska, 7A Kiev, 08132</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:+380441111111" class="contacts-item link"
+                    >+38 044 111 11 11</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="mailto:barbershop@email.com"
+                    class="contacts-item link"
+                    >barbershop@email.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <p class="contacts-pre-title pre-title">working hours</p>
+            <p class="contacts-time">Every day from 9:00 to 22:00</p>
+          </section>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <p class="footer-copy">&copy; Copyright 2020</p>
@@ -490,6 +518,70 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-button" data-modal-close>X</button>
+        <p class="modal-title">Замовити послугу:</p>
+        <form action="" class="modal-form">
+          <div class="form-element">
+            <label for="name">Введіть ім'я <span>*</span></label>
+            <div class="input-wrap">
+              <input type="text" name="name" id="name" required />
+              <svg viewBox="0 0 100 100" width="20" class="icon shape-codepen">
+                <use xlink:href="./img/sprite.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-element">
+            <label for="password">Введіть пароль:</label>
+            <input type="password" id="password" name="password" />
+          </div>
+
+          <div class="form-element">
+            <label for="email">Введіть адрес електронної пошти:</label>
+            <input
+              type="email"
+              id="email"
+              pattern="^[a-z0-9](\.?[a-z0-9]){5,}@g(oogle)?mail\.com$"
+              placeholder="your.email@gmail.com"
+            />
+            <span class="error">Не вірно введено пошту</span>
+          </div>
+
+          <div class="form-element">
+            <label for="tel">Введіть номер телефона:</label>
+            <input
+              type="tel"
+              id="tel"
+              placeholder="+38-050-123-45-67"
+              pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+            />
+          </div>
+
+          <div class="accept">
+            <input
+              type="checkbox"
+              id="accept"
+              name="accept"
+              class="visually-hidden"
+              required
+            />
+
+            <label for="accept">
+              <div class="checkbox">
+                <svg
+                  viewBox="0 0 100 100"
+                  width="12"
+                  class="icon shape-codepen"
+                >
+                  <use xlink:href="./img/sprite.svg#icon-tick"></use>
+                </svg>
+              </div>
+              Погоджуюся з розсилкою та приймаю Умови договору</label
+            >
+          </div>
+
+          <button type="submit" class="btn">Відправити</button>
+          <button type="reset" class="btn">Скинути</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

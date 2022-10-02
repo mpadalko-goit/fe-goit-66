@@ -165,8 +165,27 @@ body {
   display: flex;
 }
 
+.hero-social-wrap {
+  width: 90px;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 27px;
+  padding-bottom: 40px;
+}
+
 .hero-social {
-  width: 100px;
+  display: flex;
+  transform: rotate(-90deg) translatey(100%);
+  transform-origin: bottom left;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-social::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
 }
 
 .social-item-link,
@@ -501,9 +520,80 @@ body {
   fill: var(--accent-color);
 }
 
+.wrap-bottom {
+  background-color: #191c26;
+  background-image: url(../img/contacts-bg.png);
+  background-size: 50%;
+}
+
+.booking-container {
+  display: flex;
+}
+
+.booking {
+  padding: 130px 0 120px;
+  width: 50%;
+}
+
+.contacts {
+  padding: 130px 0 120px;
+  width: 50%;
+}
+
 /* Booking form section */
 .booking-title {
   color: var(--secondary-text-color);
+  margin-bottom: 44px;
+}
+
+/* Form */
+
+.online-form {
+  padding-right: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-item {
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--primary-title-color);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--primary-title-color);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.form-item:focus {
+  outline: none;
+  border-bottom: 1px solid #fff;
+}
+
+.form-item:focus::placeholder {
+  color: #fff;
+}
+
+input.form-item {
+  width: 270px;
+  height: 24px;
+  padding-bottom: 8px;
+}
+
+textarea.form-item {
+  width: 100%;
+}
+
+.form-item::placeholder {
+  color: var(--primary-title-color);
+}
+
+.online-form textarea {
+  resize: none;
+  height: 76px;
+  margin-top: 44px;
 }
 
 /* Contacts section */
@@ -565,16 +655,21 @@ body {
   width: 500px;
   height: 600px;
   position: absolute;
+  padding: 40px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: #fff;
 }
 
+.modal-title {
+  text-align: center;
+}
+
 .close-button {
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: -10px;
+  top: -10px;
   background-color: grey;
   color: white;
   width: 30px;
@@ -594,5 +689,80 @@ body {
 }
 
 .no-scroll {
-    overflow: hidden;
+  overflow: hidden;
+}
+
+/* Form */
+
+.form-element {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-element label {
+  margin-bottom: 10px;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.form-element svg {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+
+.form-element input {
+  border: none;
+  width: 100%;
+  height: 40px;
+  border: 1px solid grey;
+  padding-left: 42px;
+  border-radius: 4px;
+  outline: none;
+}
+
+.form-element input:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.form-element input:focus + svg {
+  fill: var(--accent-color);
+}
+
+.form-element .error {
+  color: red;
+  display: none;
+}
+
+.modal-form .btn {
+  padding: 5px 15px;
+  background: var(--accent-color);
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.checkbox {
+  border: 2px solid #212121;
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  display: flex;
+}
+
+.checkbox svg {
+  display: none;
+}
+
+.accept input:focus:checked + label .checkbox {
+  background: #2196f3;
+  border: none;
+}
+
+.accept input:focus:checked + label .checkbox svg {
+  display: block;
 }
