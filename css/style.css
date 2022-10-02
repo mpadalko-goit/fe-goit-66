@@ -524,6 +524,8 @@ body {
   background-color: #191c26;
   background-image: url(../img/contacts-bg.png);
   background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .booking-container {
