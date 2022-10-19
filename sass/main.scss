@@ -1,0 +1,27 @@
+// Base
+@import "./base/variables";
+@import "./base/mixins";
+@import "./base/utils";
+@import "./base/common";
+@import "./base/container";
+
+@import "./base/templates";
+@import "./base/buttons";
+
+// Layouts
+@import "./layouts/header";
+
+@import "./layouts/hero";
+@import "./layouts/about";
+@import "./layouts/prices";
+@import "./layouts/benefits";
+@import "./layouts/barbers";
+@import "./layouts/gallery";
+@import "./layouts/bookings";
+@import "./layouts/contacts";
+
+@import "./layouts/footer";
+
+// Components
+@import "./components/modal";
+@import "./components/mob-menu";

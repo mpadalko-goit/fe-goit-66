@@ -1,0 +1,50 @@
+.about {
+  padding: 120px 0;
+}
+
+.about-wrapper {
+  display: flex;
+}
+
+.about-list {
+  display: flex;
+}
+
+.about-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.desc-wrapper {
+  padding-left: 30px;
+  padding-right: 100px;
+}
+
+.about-pre-title {
+  color: var(--primary-text-color);
+  margin-bottom: 20px;
+}
+
+.about-title {
+  color: var(--primary-text-color);
+  margin-bottom: 20px;
+}
+
+.about-description {
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  color: var(--tetriary-text-color);
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 14px;
+  line-height: 1.9;
+  letter-spacing: 0.02em;
+  color: var(--tetriary-text-color);
+  margin-bottom: 42px;
+}
+
+.about-btn {
+  color: var(--primary-text-color);
+}

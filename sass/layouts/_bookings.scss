@@ -1,0 +1,75 @@
+.wrap-bottom {
+  background-color: #191c26;
+  background-image: url(../img/contacts-bg.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.booking-container {
+  display: flex;
+}
+
+.booking {
+  padding: 130px 0 120px;
+  width: 50%;
+}
+
+.contacts {
+  padding: 130px 0 120px;
+  width: 50%;
+}
+
+/* Booking form section */
+.booking-title {
+  color: var(--secondary-text-color);
+  margin-bottom: 44px;
+}
+
+.online-form {
+  padding-right: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-item {
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--primary-title-color);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--primary-title-color);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.form-item:focus {
+  outline: none;
+  border-bottom: 1px solid #fff;
+}
+
+.form-item:focus::placeholder {
+  color: #fff;
+}
+
+input.form-item {
+  width: 270px;
+  height: 24px;
+  padding-bottom: 8px;
+}
+
+textarea.form-item {
+  width: 100%;
+}
+
+.form-item::placeholder {
+  color: var(--primary-title-color);
+}
+
+.online-form textarea {
+  resize: none;
+  height: 76px;
+  margin-top: 44px;
+}

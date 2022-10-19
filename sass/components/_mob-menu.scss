@@ -1,0 +1,18 @@
+.mob-menu {
+  width: 337px;
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+  right: 0;
+  top: 0;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.menu-open {
+  @include tablet
+    display: none;
+  }
+}

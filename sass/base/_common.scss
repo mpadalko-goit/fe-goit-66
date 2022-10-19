@@ -1,0 +1,57 @@
+/* Section pre title */
+.pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  color: var(--primary-text-color);
+}
+
+.pre-title::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background: currentColor;
+}
+
+/*Section title */
+.title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  color: var(--primary-text-color);
+}
+
+/* List styles */
+.list {
+  list-style: none;
+}
+
+/* Link styles */
+.link {
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+/* Hide heading */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}

@@ -1,0 +1,33 @@
+.contacts-address {
+  font-style: normal;
+}
+
+.contacts-title {
+  color: var(--secondary-text-color);
+}
+
+.contacts-item {
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  color: var(--description-text);
+}
+
+.contacts-list li:first-child .contacts-item {
+  font-weight: 700;
+}
+
+.contacts-list li:last-child .contacts-item {
+  text-decoration: underline;
+}
+
+.contacts-pre-title {
+  color: var(--secondary-text-color);
+}
+
+.contacts-time {
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  color: var(--description-text);
+}
