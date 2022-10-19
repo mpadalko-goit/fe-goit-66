@@ -12,7 +12,7 @@
 }
 
 .menu-open {
-  @include tablet
+  @include tablet {
     display: none;
   }
 }
